@@ -4,6 +4,18 @@
 
 **Notum** is a privacy-focused, local-first browser extension designed for active studying, note-taking, and knowledge organization from web pages and videos. All data processing happens 100% on the client, ensuring complete privacy and user control.
 
+![Notum Screenshot](public/screenshot.png)
+
+## 🧰 Tech Stack
+
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Webpack](https://img.shields.io/badge/Webpack-5-8DD6F9?logo=webpack&logoColor=111)
+![Dexie](https://img.shields.io/badge/IndexedDB-Dexie-2D3748)
+![Jest](https://img.shields.io/badge/Tests-Jest-C21325?logo=jest&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+![SonarCloud](https://img.shields.io/badge/Code%20Quality-SonarCloud-F3702A?logo=sonarcloud&logoColor=white)
+
 ## 🌟 Features
 
 ### Core Functionality
