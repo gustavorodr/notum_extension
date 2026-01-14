@@ -25,7 +25,7 @@ export class NotumDatabase extends Dexie {
 
     this.version(1).stores({
       users: 'id, name, createdAt',
-      resources: 'id, type, url, title, contentHash, createdAt, &url',
+      resources: 'id, type, title, contentHash, createdAt, &url',
       highlights: 'id, resourceId, text, createdAt',
       studyTracks: 'id, name, isTemplate, createdAt',
       flashcards: 'id, resourceId, highlightId, nextReview, difficulty',

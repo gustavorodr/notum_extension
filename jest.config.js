@@ -15,7 +15,10 @@ module.exports = {
     '!src/**/*.worker.ts',
   ],
   setupFilesAfterEnv: ['<rootDir>/src/test/setup.ts'],
-  moduleNameMapping: {
+  moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
+    '^dexie$': '<rootDir>/node_modules/dexie/dist/dexie.js',
+    '\\.(css|less|scss)$': '<rootDir>/src/test/styleMock.js',
+    '\\.(png|jpe?g|gif|svg)$': '<rootDir>/src/test/fileMock.js',
   },
 };
