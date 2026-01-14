@@ -91,3 +91,5 @@ jobs:
             -Dsonar.tests=src
             -Dsonar.test.inclusions=src/**/__tests__/**,src/**/*.test.ts,src/**/*.test.tsx
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+            -Dsonar.qualitygate.wait=true
+            -Dsonar.qualitygate.timeout=300
