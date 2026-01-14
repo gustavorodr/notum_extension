@@ -45,8 +45,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
 
-    # Only run scan when secrets are available (avoids failing on PRs from forks)
-    if: ${{ secrets.SONAR_TOKEN != '' }}
+    # Avoid running on PRs from forks (secrets are not provided there).
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.fork == false }}
 
     permissions:
       contents: read
@@ -74,6 +74,7 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
+        if: ${{ secrets.SONAR_TOKEN != '' }}
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           GITHUB_TOKEN: ${{ github.token }}
