@@ -178,8 +178,3 @@ We welcome contributions! Please see [REQUIREMENTS.md](REQUIREMENTS.md) for deta
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-**Made with ❤️ for learners who value privacy and control over their data.**
-Local-first browser extension that helps you study by collecting pages and videos, tracking progress, and exporting everything to Obsidian.
